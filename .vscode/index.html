@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <nav>
+             <img src="./assets/logo.png" alt="Logo do site" class="logo">
+
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <ion-icon name="tablet-portrait"></ion-icon>
+                        Boards
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="people"></ion-icon>
+                        Equipes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="document-text"></ion-icon>
+                        Relatórios
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <ion-icon name="cog"></ion-icon>
+                        Ajustes
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="inner">
+                <section class="title-avatar">
+                    <h1>Meu Kanban <img src="./assets/pincenzin.png" alt=""></h1>
+                    <img src="https://github.com/cbrunocruz.png" alt="foto do github">
+                </section>
+
+                <section class="filter">
+                    <button>
+                        <ion-icon name="filter-outline"></ion-icon>
+                        <span>Filtrar</span>
+                    </button>
+                    <div class="input-wrapper">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input
+                         type="text"
+                         placeholder="busque por cards, assutos ou responsáveis..."
+                         />
+                    </div>
+                </section>
+
+                <!-- section.kanban -->
+                <section class="kanban">
+                    <div class="todo">
+                        <h2>A Fazer</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>#boraCodar um Kanban</h3>
+                                <div class="with-css">
+                                <p>
+                                    Novo desafio do #boracodar da Rocketseat, onde é proposto construir um quadro de Kanban.
+                                </p>
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    <span>desafio</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Manter a ofensiva</h3>
+                                <div class="with-css">
+                                <p>
+                                    Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva.
+                                </p>
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doing">
+                        <h2>Fazendo</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Conferir o novo desafio</h3>
+                                <div class="with-css">
+                                <p>
+                                    Conferir o novo projeto do #boracodar para fazê-lo da melhor maneira possível.
+                                </p>
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    <span>desafio</span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="done">
+                        <h2>Feito</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>#boraCodar uma página de login</h3>
+                                <div class="with-css">
+                                <p>
+                                    Novo desafio do #boracodar da Rocketseat, onde é proposto construir uma página de login.
+                                </p>
+                                <div class="tags">
+                                    <span>rocketseat</span>
+                                    <span>desafio</span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
